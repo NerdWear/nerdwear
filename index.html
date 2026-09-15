@@ -1,0 +1,2263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NerdWear | Smart Gear for Curious Minds</title>
+
+  <meta
+    name="description"
+    content="NerdWear is coming soon. Premium embroidered hats, mugs, bottles and gear for scientists, engineers, mathematicians, programmers, students and the incurably curious."
+  >
+
+  <meta name="theme-color" content="#0b0d10">
+
+  <link rel="canonical" href="https://nerdwear.net/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NerdWear | Coming Soon">
+  <meta
+    property="og:description"
+    content="For people who think differently, question everything, and know the equation before it needs explaining."
+  >
+  <meta property="og:url" content="https://nerdwear.net/">
+  <meta
+    property="og:image"
+    content="https://nerdwear.net/images/set-3/classic-dad-hat-black-front-6aa47cb291dbb.jpg"
+  >
+
+  <!-- X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NerdWear | Coming Soon">
+  <meta
+    name="twitter:description"
+    content="Smart gear for curious minds. Follow @NerdWearUSA and get on the launch list."
+  >
+  <meta name="twitter:site" content="@NerdWearUSA">
+  <meta
+    name="twitter:image"
+    content="https://nerdwear.net/images/set-3/classic-dad-hat-black-front-6aa47cb291dbb.jpg"
+  >
+
+  <!-- Brevo -->
+  <style>
+    @font-face {
+      font-display: swap;
+      font-family: Roboto;
+      src:
+        url("https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2")
+        format("woff2");
+    }
+
+    :where(.sib-form-message-panel) {
+      display: none;
+    }
+
+    :where(.sib-form-message-panel .sib-notification__icon) {
+      width: 20px;
+      height: 20px;
+    }
+
+    #sib-container input::placeholder {
+      color: #7b8590;
+    }
+  </style>
+
+  <link
+    rel="stylesheet"
+    href="https://sibforms.com/forms/end-form/build/sib-styles.css"
+  >
+
+  <style>
+
+    /* =========================================================
+       BASE
+       ========================================================= */
+
+    :root {
+      --bg: #0a0c0f;
+      --bg-soft: #11151a;
+      --panel: #151a20;
+      --panel-light: #1c222a;
+
+      --text: #f6f7f8;
+      --muted: #a9b2bb;
+      --soft: #747f8b;
+
+      --cyan: #26d7d0;
+      --cyan-light: #72fff4;
+
+      --gold: #ffc928;
+      --orange: #ff6a1a;
+
+      --line: rgba(255,255,255,.10);
+
+      --max: 1180px;
+
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(
+          circle at 80% 10%,
+          rgba(38,215,208,.08),
+          transparent 30rem
+        ),
+        radial-gradient(
+          circle at 15% 35%,
+          rgba(255,106,26,.06),
+          transparent 26rem
+        ),
+        var(--bg);
+
+      color: var(--text);
+
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      line-height: 1.55;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    .container {
+      width: min(calc(100% - 40px), var(--max));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+
+      color: var(--cyan-light);
+
+      font-size: .76rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      margin: 0;
+
+      font-size: clamp(2.2rem, 5vw, 4.4rem);
+      line-height: .98;
+
+      letter-spacing: -.055em;
+    }
+
+    .section-copy {
+      max-width: 680px;
+
+      margin: 24px 0 0;
+
+      color: var(--muted);
+
+      font-size: clamp(1rem, 1.7vw, 1.18rem);
+      line-height: 1.75;
+    }
+
+    .accent {
+      color: var(--cyan-light);
+    }
+
+    /* =========================================================
+       TOP BAR
+       ========================================================= */
+
+    .site-header {
+      position: relative;
+      z-index: 20;
+
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 78px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    .logo {
+      text-decoration: none;
+
+      font-size: 1.55rem;
+      font-weight: 900;
+      letter-spacing: -.045em;
+    }
+
+    .logo-dot {
+      color: var(--cyan);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-link {
+      color: #cdd4da;
+
+      text-decoration: none;
+
+      font-size: .92rem;
+      font-weight: 700;
+    }
+
+    .nav-link:hover {
+      color: #fff;
+    }
+
+    .mini-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 42px;
+
+      padding: 0 16px;
+
+      border: 1px solid rgba(255,255,255,.17);
+      border-radius: 999px;
+
+      background: rgba(255,255,255,.04);
+
+      text-decoration: none;
+
+      font-size: .86rem;
+      font-weight: 800;
+
+      transition:
+        transform .2s ease,
+        background .2s ease;
+    }
+
+    .mini-button:hover {
+      transform: translateY(-2px);
+      background: rgba(255,255,255,.09);
+    }
+
+    /* =========================================================
+       HERO
+       ========================================================= */
+
+    .hero {
+      position: relative;
+
+      overflow: hidden;
+
+      padding: clamp(55px, 8vw, 100px) 0 70px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, .95fr) minmax(420px, 1.05fr);
+      align-items: center;
+      gap: clamp(30px, 5vw, 80px);
+    }
+
+    .launch-badge {
+      width: fit-content;
+
+      margin-bottom: 22px;
+
+      padding: 9px 14px;
+
+      border: 1px solid rgba(38,215,208,.32);
+      border-radius: 999px;
+
+      background: rgba(38,215,208,.07);
+
+      color: var(--cyan-light);
+
+      font-size: .75rem;
+      font-weight: 900;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+
+      margin: 0;
+
+      font-size: clamp(3.7rem, 8vw, 7.4rem);
+      line-height: .87;
+
+      letter-spacing: -.075em;
+    }
+
+    .hero-lead {
+      max-width: 620px;
+
+      margin: 30px 0 0;
+
+      color: #c4cbd2;
+
+      font-size: clamp(1.06rem, 2vw, 1.33rem);
+      line-height: 1.7;
+    }
+
+    .hero-lead strong {
+      color: #fff;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 13px;
+
+      margin-top: 32px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 54px;
+
+      padding: 0 23px;
+
+      border-radius: 8px;
+
+      text-decoration: none;
+
+      font-weight: 900;
+
+      transition:
+        transform .18s ease,
+        box-shadow .18s ease,
+        background .18s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: var(--cyan);
+
+      color: #061111;
+
+      box-shadow: 0 8px 30px rgba(38,215,208,.16);
+    }
+
+    .button-primary:hover {
+      box-shadow: 0 12px 38px rgba(38,215,208,.25);
+    }
+
+    .button-secondary {
+      border: 1px solid rgba(255,255,255,.18);
+
+      background: rgba(255,255,255,.045);
+
+      color: #fff;
+    }
+
+    .button-secondary:hover {
+      background: rgba(255,255,255,.09);
+    }
+
+    .hero-note {
+      margin-top: 22px;
+
+      color: var(--soft);
+
+      font-size: .86rem;
+    }
+
+    /* Hero visual */
+
+    .hero-visual {
+      position: relative;
+
+      min-height: 620px;
+    }
+
+    .hero-glow {
+      position: absolute;
+
+      width: 480px;
+      height: 480px;
+
+      top: 12%;
+      left: 10%;
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(38,215,208,.17),
+          rgba(38,215,208,0) 68%
+        );
+
+      pointer-events: none;
+    }
+
+    .hero-person {
+      position: absolute;
+
+      z-index: 2;
+
+      width: min(520px, 100%);
+
+      right: 0;
+      bottom: 0;
+
+      filter:
+        drop-shadow(0 28px 45px rgba(0,0,0,.38));
+    }
+
+    .floating-product {
+      position: absolute;
+
+      z-index: 4;
+
+      width: 210px;
+
+      left: -18px;
+      bottom: 28px;
+
+      filter:
+        drop-shadow(0 18px 24px rgba(0,0,0,.45));
+
+      transform: rotate(-7deg);
+    }
+
+    .formula-chip {
+      position: absolute;
+
+      z-index: 5;
+
+      top: 22px;
+      right: 18px;
+
+      padding: 15px 19px;
+
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 14px;
+
+      background: rgba(14,18,22,.82);
+
+      box-shadow: 0 15px 40px rgba(0,0,0,.28);
+
+      backdrop-filter: blur(12px);
+
+      color: #fff;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .formula-chip span {
+      color: var(--gold);
+    }
+
+    /* =========================================================
+       VALUE STRIP
+       ========================================================= */
+
+    .value-strip {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+
+      background: rgba(255,255,255,.018);
+    }
+
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .value-item {
+      padding: 24px 18px;
+
+      text-align: center;
+
+      color: #c7ced5;
+
+      font-size: .88rem;
+      font-weight: 800;
+    }
+
+    .value-item + .value-item {
+      border-left: 1px solid var(--line);
+    }
+
+    .value-item strong {
+      display: block;
+
+      margin-bottom: 3px;
+
+      color: #fff;
+
+      font-size: .98rem;
+    }
+
+    /* =========================================================
+       TRIBE
+       ========================================================= */
+
+    .tribe {
+      padding: clamp(90px, 11vw, 150px) 0;
+    }
+
+    .tribe-grid {
+      display: grid;
+      grid-template-columns: .92fr 1.08fr;
+      align-items: center;
+
+      gap: clamp(50px, 7vw, 100px);
+    }
+
+    .tribe-card {
+      position: relative;
+
+      overflow: hidden;
+
+      min-height: 620px;
+
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+
+      background:
+        linear-gradient(
+          150deg,
+          rgba(38,215,208,.08),
+          transparent 45%
+        ),
+        var(--panel);
+    }
+
+    .tribe-card img {
+      position: absolute;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+      object-position: center 20%;
+    }
+
+    .tribe-copy blockquote {
+      margin: 34px 0 0;
+
+      padding: 0 0 0 23px;
+
+      border-left: 3px solid var(--cyan);
+
+      color: #eef2f4;
+
+      font-size: clamp(1.25rem, 2.3vw, 1.75rem);
+      line-height: 1.45;
+
+      font-weight: 750;
+      letter-spacing: -.02em;
+    }
+
+    .tribe-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 9px;
+
+      margin: 30px 0 0;
+      padding: 0;
+
+      list-style: none;
+    }
+
+    .tribe-list li {
+      padding: 8px 12px;
+
+      border: 1px solid rgba(255,255,255,.11);
+      border-radius: 999px;
+
+      background: rgba(255,255,255,.03);
+
+      color: #bcc5cc;
+
+      font-size: .83rem;
+      font-weight: 750;
+    }
+
+    /* =========================================================
+       PRODUCT PREVIEW
+       ========================================================= */
+
+    .preview {
+      padding: 0 0 clamp(95px, 11vw, 150px);
+    }
+
+    .preview-heading {
+      max-width: 840px;
+
+      margin-bottom: 45px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+    }
+
+    .product-card {
+      position: relative;
+
+      overflow: hidden;
+
+      min-height: 350px;
+
+      border: 1px solid var(--line);
+      border-radius: 22px;
+
+      background:
+        radial-gradient(
+          circle at 50% 30%,
+          rgba(255,255,255,.08),
+          transparent 55%
+        ),
+        var(--panel);
+
+      isolation: isolate;
+    }
+
+    .product-card.large {
+      grid-column: span 7;
+
+      min-height: 510px;
+    }
+
+    .product-card.medium {
+      grid-column: span 5;
+
+      min-height: 510px;
+    }
+
+    .product-card.third {
+      grid-column: span 4;
+
+      min-height: 390px;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: contain;
+
+      padding: 18px;
+
+      transition: transform .45s ease;
+    }
+
+    .product-card:hover img {
+      transform: scale(1.035);
+    }
+
+    .product-tag {
+      position: absolute;
+
+      z-index: 4;
+
+      left: 18px;
+      bottom: 18px;
+
+      padding: 8px 11px;
+
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 999px;
+
+      background: rgba(6,8,11,.78);
+
+      color: #fff;
+
+      font-size: .73rem;
+      font-weight: 850;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+
+      backdrop-filter: blur(8px);
+    }
+
+    .product-card.photo img {
+      padding: 0;
+
+      object-fit: cover;
+    }
+
+    /* =========================================================
+       DIFFERENCE
+       ========================================================= */
+
+    .difference {
+      padding: clamp(85px, 10vw, 130px) 0;
+
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,201,40,.035),
+          transparent 35%
+        ),
+        rgba(255,255,255,.014);
+    }
+
+    .difference-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+
+      gap: clamp(50px, 8vw, 110px);
+    }
+
+    .difference-points {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: 18px;
+    }
+
+    .difference-point {
+      padding: 25px;
+
+      border: 1px solid var(--line);
+      border-radius: 16px;
+
+      background: rgba(255,255,255,.025);
+    }
+
+    .difference-number {
+      color: var(--cyan);
+
+      font-size: .77rem;
+      font-weight: 900;
+      letter-spacing: .14em;
+    }
+
+    .difference-point h3 {
+      margin: 10px 0 8px;
+
+      font-size: 1.05rem;
+    }
+
+    .difference-point p {
+      margin: 0;
+
+      color: var(--muted);
+
+      font-size: .91rem;
+      line-height: 1.65;
+    }
+
+    /* =========================================================
+       X SECTION
+       ========================================================= */
+
+    .x-section {
+      padding: clamp(90px, 11vw, 145px) 0;
+    }
+
+    .x-box {
+      position: relative;
+
+      overflow: hidden;
+
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+
+      gap: 30px;
+
+      padding: clamp(30px, 5vw, 55px);
+
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius);
+
+      background:
+        radial-gradient(
+          circle at 80% 30%,
+          rgba(38,215,208,.13),
+          transparent 35%
+        ),
+        var(--panel);
+    }
+
+    .x-box h2 {
+      margin: 0;
+
+      font-size: clamp(2.1rem, 4.5vw, 4rem);
+      line-height: 1;
+
+      letter-spacing: -.05em;
+    }
+
+    .x-box p {
+      max-width: 720px;
+
+      margin: 18px 0 0;
+
+      color: var(--muted);
+
+      line-height: 1.7;
+    }
+
+    .x-button {
+      white-space: nowrap;
+
+      background: #fff;
+      color: #050505;
+    }
+
+    /* =========================================================
+       ALERTS / BREVO
+       ========================================================= */
+
+    .alerts {
+      padding: 0 0 clamp(100px, 12vw, 160px);
+    }
+
+    .alerts-grid {
+      display: grid;
+      grid-template-columns: .88fr 1.12fr;
+      align-items: start;
+
+      gap: clamp(45px, 7vw, 90px);
+    }
+
+    .alerts-copy {
+      padding-top: 30px;
+    }
+
+    .alerts-copy h2 {
+      margin: 0;
+
+      font-size: clamp(2.6rem, 5vw, 4.8rem);
+      line-height: .94;
+
+      letter-spacing: -.06em;
+    }
+
+    .alerts-copy p {
+      max-width: 560px;
+
+      margin: 24px 0 0;
+
+      color: var(--muted);
+
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
+    .privacy-note {
+      margin-top: 24px;
+
+      color: #707a84;
+
+      font-size: .83rem;
+    }
+
+    /* Brevo integration */
+
+    .brevo-shell {
+      padding: 15px;
+
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 24px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(38,215,208,.06),
+          rgba(255,255,255,.015)
+        );
+
+      box-shadow: 0 25px 70px rgba(0,0,0,.25);
+    }
+
+    .brevo-shell .sib-form {
+      padding: 0 !important;
+
+      background: transparent !important;
+    }
+
+    .brevo-shell #sib-form-container {
+      padding: 0 !important;
+    }
+
+    .brevo-shell #sib-container {
+      max-width: none !important;
+
+      padding: 26px !important;
+
+      border: 0 !important;
+      border-radius: 16px !important;
+
+      background: #f8fafb !important;
+
+      box-shadow: none !important;
+    }
+
+    .brevo-shell .sib-form-block {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .brevo-shell .sib-form-block p {
+      margin-top: 0;
+    }
+
+    .brevo-shell .entry__field {
+      border-radius: 6px !important;
+    }
+
+    .brevo-shell input {
+      min-height: 50px;
+    }
+
+    .brevo-shell .sib-form-block__button {
+      min-height: 50px;
+
+      padding: 0 20px !important;
+
+      border-radius: 7px !important;
+
+      background: #12171c !important;
+
+      font-weight: 800 !important;
+
+      cursor: pointer;
+
+      transition: background .2s ease;
+    }
+
+    .brevo-shell .sib-form-block__button:hover {
+      background: #242c34 !important;
+    }
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      gap: 24px;
+
+      min-height: 95px;
+
+      color: #717b84;
+
+      font-size: .84rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+
+      color: #9ba4ac;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    /* =========================================================
+       RESPONSIVE
+       ========================================================= */
+
+    @media (max-width: 940px) {
+
+      .hero-grid,
+      .tribe-grid,
+      .difference-grid,
+      .alerts-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: 570px;
+
+        max-width: 650px;
+
+        margin: 10px auto 0;
+      }
+
+      .tribe-card {
+        min-height: 520px;
+      }
+
+      .product-card.large,
+      .product-card.medium {
+        grid-column: span 6;
+      }
+
+      .product-card.third {
+        grid-column: span 6;
+      }
+
+      .x-box {
+        grid-template-columns: 1fr;
+      }
+
+      .x-button {
+        width: fit-content;
+      }
+
+    }
+
+    @media (max-width: 680px) {
+
+      .container {
+        width: min(calc(100% - 28px), var(--max));
+      }
+
+      .site-header {
+        background: rgba(10,12,15,.88);
+
+        backdrop-filter: blur(10px);
+      }
+
+      .nav {
+        min-height: 68px;
+      }
+
+      .nav-link {
+        display: none;
+      }
+
+      .mini-button {
+        padding-inline: 12px;
+
+        font-size: .78rem;
+      }
+
+      .hero {
+        padding-top: 44px;
+      }
+
+      .hero h1 {
+        font-size: clamp(3.45rem, 18vw, 5.4rem);
+      }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .hero-visual {
+        min-height: 445px;
+      }
+
+      .hero-person {
+        width: 390px;
+        max-width: 95%;
+      }
+
+      .floating-product {
+        width: 145px;
+
+        left: -5px;
+        bottom: 10px;
+      }
+
+      .formula-chip {
+        top: 8px;
+        right: 0;
+
+        padding: 11px 13px;
+
+        font-size: 1rem;
+      }
+
+      .value-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .value-item:nth-child(3) {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .value-item:nth-child(4) {
+        border-top: 1px solid var(--line);
+      }
+
+      .tribe-card {
+        min-height: 430px;
+      }
+
+      .product-card.large,
+      .product-card.medium,
+      .product-card.third {
+        grid-column: span 12;
+
+        min-height: 360px;
+      }
+
+      .difference-points {
+        grid-template-columns: 1fr;
+      }
+
+      .x-box {
+        padding: 28px 22px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 25px 0;
+      }
+
+      .footer-links {
+        flex-wrap: wrap;
+      }
+
+      .brevo-shell {
+        padding: 8px;
+      }
+
+      .brevo-shell #sib-container {
+        padding: 18px !important;
+      }
+
+      .g-recaptcha {
+        transform: scale(.90);
+        transform-origin: 0 0;
+      }
+
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <!-- =======================================================
+       HEADER
+       ======================================================= -->
+
+  <header class="site-header">
+
+    <div class="container nav">
+
+      <a class="logo" href="/" aria-label="NerdWear home">
+        NerdWear<span class="logo-dot">.</span>
+      </a>
+
+      <nav class="nav-actions" aria-label="Main navigation">
+
+        <a
+          class="nav-link"
+          href="https://x.com/NerdWearUSA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @NerdWearUSA
+        </a>
+
+        <a class="mini-button" href="#alerts">
+          Get Launch Alerts
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <section class="hero">
+
+      <div class="container hero-grid">
+
+        <div>
+
+          <div class="launch-badge">
+            NerdWear is coming
+          </div>
+
+          <h1>
+            Wear what
+            <span class="accent">you know.</span>
+          </h1>
+
+          <p class="hero-lead">
+            NerdWear is smart gear for the people who ask why,
+            calculate twice, test assumptions, write the code,
+            prove the theorem and keep going when everyone else
+            stopped paying attention.
+          </p>
+
+          <p class="hero-lead">
+            <strong>
+              Premium embroidered hats, distinctive designs and
+              a growing collection made for curious minds.
+            </strong>
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              class="button button-primary"
+              href="https://x.com/NerdWearUSA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Follow @NerdWearUSA
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="#alerts"
+            >
+              Join the Launch List
+            </a>
+
+          </div>
+
+          <p class="hero-note">
+            No store yet. No endless sales pitch. Just a first look
+            at what we're building.
+          </p>
+
+        </div>
+
+
+        <div class="hero-visual" aria-hidden="true">
+
+          <div class="hero-glow"></div>
+
+          <div class="formula-chip">
+            1 / <span>137</span>
+          </div>
+
+          <img
+            class="hero-person"
+            src="https://nerdwear.net/images/set-3/classic-dad-hat-black-front-6aa47cb291dbb.jpg"
+            alt=""
+            width="1200"
+            height="1200"
+            decoding="async"
+            fetchpriority="high"
+          >
+
+          <img
+            class="floating-product"
+            src="https://nerdwear.net/images/set-1/classic-snapback-black-red-front-6aa4795fa02ae.png"
+            alt=""
+            width="1200"
+            height="1200"
+            decoding="async"
+          >
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         VALUE STRIP
+         ===================================================== -->
+
+    <section class="value-strip" aria-label="NerdWear product qualities">
+
+      <div class="container value-grid">
+
+        <div class="value-item">
+          <strong>Embroidered</strong>
+          Not flat printed
+        </div>
+
+        <div class="value-item">
+          <strong>Multiple Styles</strong>
+          Caps, snapbacks, beanies
+        </div>
+
+        <div class="value-item">
+          <strong>Color Choices</strong>
+          Built to mix and match
+        </div>
+
+        <div class="value-item">
+          <strong>More Than Hats</strong>
+          Mugs, bottles and more
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TRIBE
+         ===================================================== -->
+
+    <section class="tribe">
+
+      <div class="container tribe-grid">
+
+        <div class="tribe-card">
+
+          <img
+            src="https://nerdwear.net/images/set-3/classic-dad-hat-cranberry-front-6aa485a8d130a.jpg"
+            alt="Person wearing a NerdWear embroidered hat"
+            width="1200"
+            height="1200"
+            loading="lazy"
+            decoding="async"
+          >
+
+        </div>
+
+
+        <div class="tribe-copy">
+
+          <p class="eyebrow">
+            You know who you are
+          </p>
+
+          <h2 class="section-title">
+            Not everyone
+            <span class="accent">will get it.</span>
+          </h2>
+
+          <p class="section-copy">
+            That's part of the point. NerdWear is for people who
+            recognize the reference, understand the equation, catch
+            the joke or stop long enough to ask what it means.
+          </p>
+
+          <blockquote>
+            For the people quietly calculating, designing,
+            discovering, debugging, teaching, testing and solving
+            the things everyone else depends on.
+          </blockquote>
+
+          <ul class="tribe-list">
+            <li>Scientists</li>
+            <li>Engineers</li>
+            <li>Programmers</li>
+            <li>Mathematicians</li>
+            <li>Students</li>
+            <li>Teachers</li>
+            <li>Researchers</li>
+            <li>Builders</li>
+            <li>Skeptics</li>
+            <li>The incurably curious</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PRODUCT PREVIEW
+         ===================================================== -->
+
+    <section class="preview">
+
+      <div class="container">
+
+        <div class="preview-heading">
+
+          <p class="eyebrow">
+            A small preview
+          </p>
+
+          <h2 class="section-title">
+            One idea.
+            <span class="accent">A lot of ways to wear it.</span>
+          </h2>
+
+          <p class="section-copy">
+            Different hat styles, different color combinations,
+            familiar equations, obscure references and a few ideas
+            that simply deserve to be worn in public.
+          </p>
+
+        </div>
+
+
+        <div class="product-grid">
+
+          <article class="product-card large">
+
+            <img
+              src="https://nerdwear.net/images/set-1/classic-dad-hat-black-front-6aa47e86c58c1.png"
+              alt="Black NerdWear cap embroidered with the golden ratio"
+              width="1200"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <span class="product-tag">
+              Embroidered equations
+            </span>
+
+          </article>
+
+
+          <article class="product-card medium">
+
+            <img
+              src="https://nerdwear.net/images/set-1/cuffed-beanie-gold-front-6aa475a1942d3.png"
+              alt="Gold NerdWear beanie embroidered with the fine structure constant"
+              width="1200"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <span class="product-tag">
+              More than ball caps
+            </span>
+
+          </article>
+
+
+          <article class="product-card third">
+
+            <img
+              src="https://nerdwear.net/images/set-2/classic-dad-hat-khaki-left-front-6aa471d32e43f.png"
+              alt="Khaki NerdWear cap with mathematical embroidery"
+              width="1200"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <span class="product-tag">
+              Color combinations
+            </span>
+
+          </article>
+
+
+          <article class="product-card third">
+
+            <img
+              src="https://nerdwear.net/images/set-2/vintage-cap-maroon-left-front-6aa476ad2be5d.png"
+              alt="Maroon vintage NerdWear embroidered cap"
+              width="1200"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <span class="product-tag">
+              Vintage styles
+            </span>
+
+          </article>
+
+
+          <article class="product-card third photo">
+
+            <img
+              src="https://nerdwear.net/images/set-4/black-glossy-mug-black-15-oz-handle-on-left-6aa4783cf2883.png"
+              alt="Black NerdWear mug featuring the fine structure constant"
+              width="1200"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <span class="product-tag">
+              Desk worthy
+            </span>
+
+          </article>
+
+
+          <article class="product-card medium photo">
+
+            <img
+              src="https://nerdwear.net/images/set-4/stainless-steel-water-bottle-white-17-oz-front-6aa47ed42ffdd.png"
+              alt="White NerdWear stainless steel bottle featuring the golden ratio"
+              width="1200"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <span class="product-tag">
+              Beyond apparel
+            </span>
+
+          </article>
+
+
+          <article class="product-card large photo">
+
+            <img
+              src="https://nerdwear.net/images/set-4/white-glossy-mug-white-20-oz-woman-6aa47c116a526.png"
+              alt="Person holding a NerdWear equation mug"
+              width="1200"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <span class="product-tag">
+              Bring the formula with you
+            </span>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PRODUCT PHILOSOPHY
+         ===================================================== -->
+
+    <section class="difference">
+
+      <div class="container difference-grid">
+
+        <div>
+
+          <p class="eyebrow">
+            Why NerdWear
+          </p>
+
+          <h2 class="section-title">
+            The reference is
+            <span class="accent">the signal.</span>
+          </h2>
+
+          <p class="section-copy">
+            NerdWear is being built around a simple idea:
+            intelligence does not have to announce itself.
+            Sometimes the right symbol is enough.
+          </p>
+
+        </div>
+
+
+        <div class="difference-points">
+
+          <article class="difference-point">
+
+            <span class="difference-number">
+              01
+            </span>
+
+            <h3>Embroidered detail</h3>
+
+            <p>
+              Our hats use embroidery so the design has texture,
+              dimension and a premium physical presence.
+            </p>
+
+          </article>
+
+
+          <article class="difference-point">
+
+            <span class="difference-number">
+              02
+            </span>
+
+            <h3>Recognition without explanation</h3>
+
+            <p>
+              Some designs are obvious. Others are a quiet signal
+              between people who already know.
+            </p>
+
+          </article>
+
+
+          <article class="difference-point">
+
+            <span class="difference-number">
+              03
+            </span>
+
+            <h3>Color matters</h3>
+
+            <p>
+              Designs are being developed across multiple hat and
+              thread combinations so you can find one that feels
+              like yours.
+            </p>
+
+          </article>
+
+
+          <article class="difference-point">
+
+            <span class="difference-number">
+              04
+            </span>
+
+            <h3>Curiosity is part of the design</h3>
+
+            <p>
+              The best NerdWear starts conversations, rewards
+              recognition and occasionally makes somebody ask,
+              "What does that mean?"
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         X CTA
+         ===================================================== -->
+
+    <section class="x-section">
+
+      <div class="container">
+
+        <div class="x-box">
+
+          <div>
+
+            <p class="eyebrow">
+              Follow the build
+            </p>
+
+            <h2>
+              NerdWear is already alive on X.
+            </h2>
+
+            <p>
+              Follow <strong>@NerdWearUSA</strong> for new design
+              previews, formula stories, color combinations, polls,
+              behind-the-scenes decisions and launch updates.
+              You'll see what we're building before the store opens.
+            </p>
+
+          </div>
+
+          <a
+            class="button x-button"
+            href="https://x.com/NerdWearUSA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Follow @NerdWearUSA
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         BREVO ALERTS
+         ===================================================== -->
+
+    <section
+      class="alerts"
+      id="alerts"
+    >
+
+      <div class="container alerts-grid">
+
+        <div class="alerts-copy">
+
+          <p class="eyebrow">
+            Don't miss launch day
+          </p>
+
+          <h2>
+            Get on the
+            <span class="accent">NerdWear list.</span>
+          </h2>
+
+          <p>
+            If NerdWear looks like your kind of place, this is the
+            easiest way to make sure you know when the doors open.
+          </p>
+
+          <p>
+            You'll also get new design drops, stories behind the
+            formulas and the occasional surprise for people who
+            think a little differently.
+          </p>
+
+          <div class="privacy-note">
+            No spam. No rented lists. Unsubscribe anytime.
+          </div>
+
+        </div>
+
+
+        <div class="brevo-shell">
+
+          <!-- =================================================
+               BREVO FORM
+               ================================================= -->
+
+          <div
+            class="sib-form"
+            style="text-align:center;background-color:transparent;"
+          >
+
+            <div
+              id="sib-form-container"
+              class="sib-form-container"
+            >
+
+              <!-- Error message -->
+
+              <div
+                id="error-message"
+                class="sib-form-message-panel"
+                style="
+                  font-family:Helvetica,sans-serif;
+                  font-size:16px;
+                  text-align:left;
+                  color:#661d1d;
+                  background-color:#ffeded;
+                  border-color:#ff4949;
+                  border-radius:3px;
+                  max-width:540px;
+                "
+              >
+
+                <div
+                  class="sib-form-message-panel__text
+                         sib-form-message-panel__text--center"
+                >
+
+                  <svg
+                    viewBox="0 0 512 512"
+                    class="sib-icon sib-notification__icon"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M256 40c118.621 0 216 96.075 216 216
+                      0 119.291-96.61 216-216 216-119.244
+                      0-216-96.562-216-216
+                      0-119.203 96.602-216 216-216m0-32
+                      C119.043 8 8 119.083 8 256
+                      c0 136.997 111.043 248 248 248
+                      s248-111.003 248-248
+                      C504 119.083 392.957 8 256 8z"
+                    >
+                    </path>
+                  </svg>
+
+                  <span class="sib-form-message-panel__inner-text">
+                    Something went wrong and we couldn't save your
+                    signup. Please try again.
+                  </span>
+
+                </div>
+
+              </div>
+
+
+              <!-- Success message -->
+
+              <div
+                id="success-message"
+                class="sib-form-message-panel"
+                style="
+                  font-family:Helvetica,sans-serif;
+                  font-size:16px;
+                  text-align:left;
+                  color:#085229;
+                  background-color:#e7faf0;
+                  border-color:#13ce66;
+                  border-radius:3px;
+                  max-width:540px;
+                "
+              >
+
+                <div
+                  class="sib-form-message-panel__text
+                         sib-form-message-panel__text--center"
+                >
+
+                  <svg
+                    viewBox="0 0 512 512"
+                    class="sib-icon sib-notification__icon"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M256 8C119.033 8 8 119.033 8 256
+                      s111.033 248 248 248
+                      248-111.033 248-248
+                      S392.967 8 256 8z"
+                    >
+                    </path>
+                  </svg>
+
+                  <span class="sib-form-message-panel__inner-text">
+                    Almost there. Check your email and confirm your
+                    subscription to join the NerdWear list.
+                  </span>
+
+                </div>
+
+              </div>
+
+
+              <div
+                id="sib-container"
+                class="sib-container--large sib-container--vertical"
+              >
+
+                <form
+                  id="sib-form"
+                  method="POST"
+                  action="https://82cc8d0b.sibforms.com/serve/MUIFABvmW9xt20z1gFGPbk9lrIcZKWq-uRjbK1WQpOCaqx1WXbKybpkroDLcuAirFYubycAyqBe27ybf1BcqFNkMyp06lMZoyciVy4UeBPeWHiCB4KfxSg3qm0neXLOSAeK0wP9R4R76HwRpEuo_342f719pc0RwgXrfCDB_ZdDnUOWZk8zCqNbgG71bpINP4nT2NUWjNEUcpB9Qbw=="
+                  data-type="subscription"
+                >
+
+                  <div style="padding:8px 0;">
+
+                    <div
+                      class="sib-form-block"
+                      style="
+                        font-family:Helvetica,sans-serif;
+                        font-size:32px;
+                        font-weight:700;
+                        text-align:left;
+                        color:#26323c;
+                        background-color:transparent;
+                      "
+                    >
+                      <p>Get NerdWear Alerts</p>
+                    </div>
+
+                  </div>
+
+
+                  <div style="padding:8px 0;">
+
+                    <div
+                      class="sib-form-block"
+                      style="
+                        font-family:Helvetica,sans-serif;
+                        font-size:16px;
+                        text-align:left;
+                        color:#3c4858;
+                        background-color:transparent;
+                      "
+                    >
+
+                      <div class="sib-text-form-block">
+
+                        <p>
+                          Be the first to know when NerdWear launches.
+                          Get new design drops, the stories behind the
+                          formulas, and occasional surprises for people
+                          who think a little differently.
+                        </p>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+                  <div style="padding:8px 0;">
+
+                    <div class="sib-input sib-form-block">
+
+                      <div class="form__entry entry_block">
+
+                        <div class="form__label-row">
+
+                          <label
+                            class="entry__label"
+                            style="
+                              font-weight:700;
+                              text-align:left;
+                              font-family:Helvetica,sans-serif;
+                              font-size:16px;
+                              color:#3c4858;
+                            "
+                            for="EMAIL"
+                            data-required="*"
+                          >
+                            Enter your email address to subscribe
+                          </label>
+
+                          <div class="entry__field">
+
+                            <input
+                              class="input"
+                              type="text"
+                              id="EMAIL"
+                              name="EMAIL"
+                              autocomplete="email"
+                              value=""
+                              placeholder="you@example.com"
+                              data-required="true"
+                              required
+                            >
+
+                          </div>
+
+                        </div>
+
+                        <label
+                          class="entry__error entry__error--primary"
+                          style="
+                            font-family:Helvetica,sans-serif;
+                            font-size:16px;
+                            text-align:left;
+                            color:#661d1d;
+                            background-color:#ffeded;
+                            border-color:#ff4949;
+                            border-radius:3px;
+                          "
+                        >
+                        </label>
+
+                        <label
+                          class="entry__specification"
+                          style="
+                            font-family:Helvetica,sans-serif;
+                            font-size:12px;
+                            text-align:left;
+                            color:#8390a4;
+                          "
+                        >
+                          No spam. Just NerdWear news and new designs.
+                          Unsubscribe anytime.
+                        </label>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+                  <!-- reCAPTCHA -->
+
+                  <div style="padding:8px 0;">
+
+                    <div class="sib-captcha sib-form-block">
+
+                      <div class="form__entry entry_block">
+
+                        <div class="form__label-row">
+
+                          <script>
+                            function handleCaptchaResponse() {
+                              var event = new Event("captchaChange");
+                              document
+                                .getElementById("sib-captcha")
+                                .dispatchEvent(event);
+                            }
+                          </script>
+
+                          <div
+                            class="g-recaptcha sib-visible-recaptcha"
+                            id="sib-captcha"
+                            data-sitekey="6Lf2b7stAAAAADZvKAeH6UCVC_7zqAsuO4vnNYkv"
+                            data-callback="handleCaptchaResponse"
+                            style="direction:ltr"
+                          >
+                          </div>
+
+                        </div>
+
+                        <label
+                          class="entry__error entry__error--primary"
+                          style="
+                            font-family:Helvetica,sans-serif;
+                            font-size:16px;
+                            text-align:left;
+                            color:#661d1d;
+                            background-color:#ffeded;
+                            border-color:#ff4949;
+                            border-radius:3px;
+                          "
+                        >
+                        </label>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+                  <!-- Submit -->
+
+                  <div style="padding:8px 0;">
+
+                    <div
+                      class="sib-form-block"
+                      style="text-align:left"
+                    >
+
+                      <button
+                        class="sib-form-block__button
+                               sib-form-block__button-with-loader"
+                        style="
+                          font-family:Helvetica,sans-serif;
+                          font-size:16px;
+                          font-weight:700;
+                          text-align:left;
+                          color:#fff;
+                          background-color:#3e4857;
+                          border-width:0;
+                          border-radius:3px;
+                        "
+                        form="sib-form"
+                        type="submit"
+                      >
+
+                        <svg
+                          class="icon clickable__icon
+                                 progress-indicator__icon
+                                 sib-hide-loader-icon"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M460.116 373.846l-20.823-12.022
+                            c-5.541-3.199-7.54-10.159-4.663-15.874
+                            30.137-59.886 28.343-131.652-5.386-189.946
+                            -33.641-58.394-94.896-95.833-161.827-99.676
+                            C261.028 55.961 256 50.751 256 44.352
+                            V20.309c0-6.904 5.808-12.337 12.703-11.982
+                            83.556 4.306 160.163 50.864 202.11 123.677
+                            42.063 72.696 44.079 162.316 6.031 236.832
+                            -3.14 6.148-10.75 8.461-16.728 5.01z"
+                          >
+                          </path>
+                        </svg>
+
+                        Keep Me Posted!
+
+                      </button>
+
+                    </div>
+
+                  </div>
+
+
+                  <!-- Brevo anti-bot field -->
+
+                  <input
+                    type="text"
+                    name="email_address_check"
+                    value=""
+                    class="input--hidden"
+                  >
+
+                  <input
+                    type="hidden"
+                    name="locale"
+                    value="en"
+                  >
+
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- End Brevo Form -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =======================================================
+       FOOTER
+       ======================================================= -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <div>
+        &copy; 2026 NerdWear.net
+      </div>
+
+      <div class="footer-links">
+
+        <a
+          href="https://x.com/NerdWearUSA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @NerdWearUSA
+        </a>
+
+        <a href="#alerts">
+          NerdWear Alerts
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =======================================================
+       BREVO SCRIPTS
+       ======================================================= -->
+
+  <script>
+    window.REQUIRED_CODE_ERROR_MESSAGE =
+      "Please choose a country code";
+
+    window.LOCALE = "en";
+
+    window.EMAIL_INVALID_MESSAGE =
+      window.SMS_INVALID_MESSAGE =
+      "That email address doesn't look quite right. Please check it and try again.";
+
+    window.REQUIRED_ERROR_MESSAGE =
+      "Please enter your email address.";
+
+    window.GENERIC_INVALID_MESSAGE =
+      "That email address doesn't look quite right. Please check it and try again.";
+
+    window.INVALID_NUMBER =
+      "That email address doesn't look quite right. Please check it and try again.";
+
+    window.INVALID_DATE =
+      "Please enter a valid date";
+
+    window.REQUIRED_MULTISELECT_MESSAGE =
+      "Please select at least 1 option";
+
+    window.translation = {
+      common: {
+        selectedList: "{quantity} list selected",
+        selectedLists: "{quantity} lists selected",
+        selectedOption: "{quantity} selected",
+        selectedOptions: "{quantity} selected"
+      }
+    };
+
+    var AUTOHIDE = Boolean(1);
+  </script>
+
+  <script
+    defer
+    src="https://sibforms.com/forms/end-form/build/main.js">
+  </script>
+
+  <script
+    src="https://www.google.com/recaptcha/api.js?hl=en"
+    async
+    defer>
+  </script>
+
+</body>
+</html>
