@@ -252,38 +252,6 @@ button, input { font: inherit; }
   gap: 40px;
   align-items: start;
 }
-.signup-panel {
-  border: 1px solid var(--line);
-  background: var(--surface);
-  border-radius: var(--radius);
-  padding: 28px;
-}
-.signup-panel label { display: block; font-weight: 800; margin-bottom: 8px; }
-.signup-panel input[type="text"] {
-  width: 100%;
-  min-height: 52px;
-  padding: 0 14px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: #0d0f11;
-  color: var(--text);
-}
-.signup-panel button {
-  margin-top: 16px;
-  min-height: 52px;
-  padding: 0 20px;
-  border: 0;
-  border-radius: 999px;
-  background: var(--accent);
-  color: var(--ink);
-  font-weight: 900;
-  cursor: pointer;
-}
-.sib-form-message-panel { display: none; margin-bottom: 12px; padding: 12px 14px; border-radius: 10px; }
-#success-message { color: #baf0cf; background: #123120; }
-#error-message { color: #ffc4c4; background: #351818; }
-.entry__error { display: block; color: #ffaaaa; font-size: .85rem; }
-.entry__specification { display: block; color: var(--muted); font-size: .78rem; margin-top: 8px; }
 
 .story-hero { padding: 98px 0 76px; border-bottom: 1px solid var(--line); }
 .story-hero-grid { display: grid; grid-template-columns: 1fr .9fr; gap: 50px; align-items: center; }
