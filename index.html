@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NerdWear | Coming Soon</title>
+
+  <meta
+    name="description"
+    content="NerdWear is coming soon. Premium embroidered hats, drinkware and gear inspired by mathematics, physics, science, engineering, code and curiosity."
+  >
+
+  <meta name="theme-color" content="#f3efe6">
+
+  <link rel="canonical" href="https://nerdwear.net/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NerdWear | Coming Soon">
+  <meta
+    property="og:description"
+    content="Premium embroidered hats, drinkware and gear for people who recognize the equation before they need it explained."
+  >
+  <meta property="og:url" content="https://nerdwear.net/">
+
+  <!-- X -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NerdWear | Coming Soon">
+  <meta
+    name="twitter:description"
+    content="Smart gear for curious minds. Follow @NerdWearUSA and join the launch list."
+  >
+  <meta name="twitter:site" content="@NerdWearUSA">
+
+  <!-- Brevo base styles -->
+  <style>
+    @font-face {
+      font-display: swap;
+      font-family: Roboto;
+      src: url(
+        "https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2"
+      ) format("woff2");
+    }
+
+    :where(.sib-form-message-panel) {
+      display: none;
+    }
+
+    :where(.sib-form-message-panel .sib-notification__icon) {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+
+  <link
+    rel="stylesheet"
+    href="https://sibforms.com/forms/end-form/build/sib-styles.css"
+  >
+
+  <style>
+    :root {
+      --paper: #f3efe6;
+      --paper-light: #faf8f3;
+      --ink: #172232;
+      --ink-soft: #354354;
+      --muted: #6c756f;
+      --blue: #315d78;
+      --blue-dark: #23485f;
+      --gold: #b98b35;
+      --line: rgba(23, 34, 50, .14);
+      --white: #ffffff;
+      --max: 1140px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+
+      color: var(--ink);
+
+      background:
+        radial-gradient(
+          circle at 90% 10%,
+          rgba(49, 93, 120, .09),
+          transparent 30rem
+        ),
+        radial-gradient(
+          circle at 8% 75%,
+          rgba(185, 139, 53, .08),
+          transparent 30rem
+        ),
+        var(--paper);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      line-height: 1.6;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(calc(100% - 40px), var(--max));
+      margin-inline: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 76px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    .brand {
+      text-decoration: none;
+
+      color: var(--ink);
+
+      font-size: 1.55rem;
+      font-weight: 800;
+      letter-spacing: -.045em;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+
+      gap: 12px;
+    }
+
+    .nav-link {
+      color: var(--ink-soft);
+
+      text-decoration: none;
+
+      font-size: .9rem;
+      font-weight: 700;
+    }
+
+    .nav-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 42px;
+
+      padding: 0 16px;
+
+      border: 1px solid var(--ink);
+      border-radius: 999px;
+
+      color: var(--ink);
+
+      text-decoration: none;
+
+      font-size: .84rem;
+      font-weight: 800;
+    }
+
+    .nav-button:hover {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+
+      overflow: hidden;
+
+      padding:
+        clamp(70px, 10vw, 130px)
+        0
+        clamp(75px, 10vw, 125px);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(300px, .8fr);
+
+      gap: clamp(50px, 8vw, 110px);
+
+      align-items: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+
+      color: var(--blue);
+
+      font-size: .76rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 780px;
+
+      margin: 0;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: clamp(4rem, 9vw, 7.7rem);
+      font-weight: 500;
+      line-height: .88;
+
+      letter-spacing: -.065em;
+    }
+
+    h1 em {
+      color: var(--blue);
+
+      font-style: normal;
+    }
+
+    .hero-copy {
+      max-width: 690px;
+
+      margin: 32px 0 0;
+
+      color: var(--ink-soft);
+
+      font-size: clamp(1.08rem, 2vw, 1.32rem);
+      line-height: 1.75;
+    }
+
+    .hero-copy strong {
+      color: var(--ink);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 12px;
+
+      margin-top: 33px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 54px;
+
+      padding: 0 23px;
+
+      border-radius: 7px;
+
+      text-decoration: none;
+
+      font-weight: 800;
+    }
+
+    .button-primary {
+      border: 1px solid var(--blue);
+
+      background: var(--blue);
+
+      color: var(--white);
+    }
+
+    .button-primary:hover {
+      background: var(--blue-dark);
+    }
+
+    .button-secondary {
+      border: 1px solid var(--ink);
+
+      background: transparent;
+
+      color: var(--ink);
+    }
+
+    .button-secondary:hover {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    /* FORMULA PANEL */
+
+    .formula-panel {
+      position: relative;
+
+      min-height: 480px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .formula-circle {
+      position: absolute;
+
+      width: min(410px, 90vw);
+      aspect-ratio: 1;
+
+      border: 1px solid rgba(49, 93, 120, .18);
+      border-radius: 50%;
+    }
+
+    .formula-circle::before,
+    .formula-circle::after {
+      content: "";
+
+      position: absolute;
+      inset: 12%;
+
+      border: 1px solid rgba(49, 93, 120, .12);
+      border-radius: 50%;
+    }
+
+    .formula-circle::after {
+      inset: 28%;
+    }
+
+    .formula-stack {
+      position: relative;
+      z-index: 2;
+
+      width: 100%;
+
+      text-align: center;
+    }
+
+    .formula-main {
+      color: var(--ink);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: clamp(3.2rem, 7vw, 5.6rem);
+      line-height: 1;
+    }
+
+    .formula-label {
+      margin-top: 16px;
+
+      color: var(--gold);
+
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .formula-small {
+      position: absolute;
+
+      padding: 9px 13px;
+
+      border: 1px solid var(--line);
+      border-radius: 8px;
+
+      background: rgba(250, 248, 243, .78);
+
+      color: var(--ink-soft);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 1.15rem;
+
+      backdrop-filter: blur(8px);
+    }
+
+    .formula-a {
+      top: 30px;
+      left: 0;
+    }
+
+    .formula-b {
+      right: 0;
+      top: 110px;
+    }
+
+    .formula-c {
+      left: 30px;
+      bottom: 58px;
+    }
+
+    .formula-d {
+      right: 30px;
+      bottom: 10px;
+    }
+
+    /* POSITIONING STRIP */
+
+    .positioning {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+
+      background: rgba(255, 255, 255, .32);
+    }
+
+    .positioning-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .positioning-item {
+      padding: 25px 20px;
+
+      text-align: center;
+
+      color: var(--ink-soft);
+
+      font-size: .88rem;
+    }
+
+    .positioning-item + .positioning-item {
+      border-left: 1px solid var(--line);
+    }
+
+    .positioning-item strong {
+      display: block;
+
+      margin-bottom: 2px;
+
+      color: var(--ink);
+
+      font-size: .98rem;
+    }
+
+    /* ABOUT */
+
+    .about {
+      padding:
+        clamp(80px, 10vw, 125px)
+        0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+
+      gap: clamp(50px, 8vw, 110px);
+    }
+
+    .about h2,
+    .signup-copy h2 {
+      margin: 0;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: clamp(2.6rem, 5vw, 4.8rem);
+      font-weight: 500;
+      line-height: .98;
+
+      letter-spacing: -.045em;
+    }
+
+    .about-copy {
+      color: var(--ink-soft);
+
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .about-copy p:first-child {
+      margin-top: 0;
+    }
+
+    .about-copy strong {
+      color: var(--ink);
+    }
+
+    .tribes {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 9px;
+
+      margin-top: 27px;
+    }
+
+    .tribes span {
+      padding: 8px 12px;
+
+      border: 1px solid var(--line);
+      border-radius: 999px;
+
+      background: rgba(255,255,255,.32);
+
+      color: var(--ink-soft);
+
+      font-size: .82rem;
+      font-weight: 700;
+    }
+
+    /* X CTA */
+
+    .x-section {
+      padding: 0 0 clamp(85px, 10vw, 125px);
+    }
+
+    .x-box {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+
+      gap: 40px;
+
+      padding: clamp(30px, 5vw, 55px);
+
+      border-radius: 18px;
+
+      background: var(--ink);
+
+      color: var(--white);
+    }
+
+    .x-box .eyebrow {
+      color: #b9d5e5;
+    }
+
+    .x-box h2 {
+      max-width: 720px;
+
+      margin: 0;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      font-weight: 500;
+      line-height: 1;
+
+      letter-spacing: -.04em;
+    }
+
+    .x-box p {
+      max-width: 730px;
+
+      margin: 20px 0 0;
+
+      color: #bec7d0;
+
+      line-height: 1.75;
+    }
+
+    .x-button {
+      background: var(--paper-light);
+
+      color: var(--ink);
+
+      white-space: nowrap;
+    }
+
+    .x-button:hover {
+      background: var(--white);
+    }
+
+    /* SIGNUP */
+
+    .signup {
+      padding: 0 0 clamp(100px, 12vw, 150px);
+    }
+
+    .signup-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+
+      gap: clamp(45px, 8vw, 90px);
+
+      align-items: start;
+    }
+
+    .signup-copy {
+      padding-top: 20px;
+    }
+
+    .signup-copy p {
+      max-width: 570px;
+
+      color: var(--ink-soft);
+
+      font-size: 1.04rem;
+      line-height: 1.8;
+    }
+
+    .privacy {
+      margin-top: 18px;
+
+      color: var(--muted);
+
+      font-size: .82rem;
+    }
+
+    .brevo-shell {
+      padding: 10px;
+
+      border: 1px solid var(--line);
+      border-radius: 18px;
+
+      background: rgba(255,255,255,.38);
+    }
+
+    .brevo-shell .sib-form {
+      padding: 0 !important;
+
+      background: transparent !important;
+    }
+
+    .brevo-shell #sib-form-container {
+      padding: 0 !important;
+    }
+
+    .brevo-shell #sib-container {
+      max-width: none !important;
+
+      padding: 28px !important;
+
+      border: 0 !important;
+      border-radius: 12px !important;
+
+      background: var(--paper-light) !important;
+    }
+
+    .brevo-shell .sib-form-block {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .brevo-shell .entry__field {
+      border-radius: 6px !important;
+    }
+
+    .brevo-shell input {
+      min-height: 50px;
+    }
+
+    .brevo-shell .sib-form-block__button {
+      min-height: 50px;
+
+      padding: 0 21px !important;
+
+      border-radius: 6px !important;
+
+      background: var(--blue) !important;
+
+      font-weight: 800 !important;
+    }
+
+    .brevo-shell .sib-form-block__button:hover {
+      background: var(--blue-dark) !important;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-inner {
+      min-height: 90px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+
+      color: var(--muted);
+
+      font-size: .84rem;
+    }
+
+    .footer-links {
+      display: flex;
+
+      gap: 20px;
+    }
+
+    .footer-links a {
+      color: var(--ink-soft);
+
+      text-decoration: none;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 880px) {
+      .hero-grid,
+      .about-grid,
+      .signup-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .formula-panel {
+        max-width: 540px;
+
+        margin-inline: auto;
+      }
+
+      .x-box {
+        grid-template-columns: 1fr;
+      }
+
+      .x-button {
+        width: fit-content;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: min(calc(100% - 28px), var(--max));
+      }
+
+      .nav-link {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 55px;
+      }
+
+      h1 {
+        font-size: clamp(3.7rem, 18vw, 5.2rem);
+      }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .formula-panel {
+        min-height: 410px;
+      }
+
+      .formula-small {
+        font-size: .9rem;
+      }
+
+      .positioning-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .positioning-item:nth-child(3) {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .positioning-item:nth-child(4) {
+        border-top: 1px solid var(--line);
+      }
+
+      .x-box {
+        padding: 28px 23px;
+      }
+
+      .brevo-shell #sib-container {
+        padding: 18px !important;
+      }
+
+      .g-recaptcha {
+        transform: scale(.9);
+        transform-origin: 0 0;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 24px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="container nav">
+
+      <a
+        class="brand"
+        href="/"
+        aria-label="NerdWear home"
+      >
+        NerdWear<span>.</span>
+      </a>
+
+      <nav
+        class="nav-actions"
+        aria-label="Primary navigation"
+      >
+
+        <a
+          class="nav-link"
+          href="https://x.com/NerdWearUSA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @NerdWearUSA
+        </a>
+
+        <a
+          class="nav-button"
+          href="#alerts"
+        >
+          Get Launch Alerts
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="container hero-grid">
+
+        <div>
+
+          <p class="eyebrow">
+            Something intelligent is coming
+          </p>
+
+          <h1>
+            Wear what
+            <em>you know.</em>
+          </h1>
+
+          <p class="hero-copy">
+            NerdWear is creating premium embroidered hats,
+            drinkware and gear inspired by the equations,
+            constants, discoveries and ideas that shape
+            how we understand the world.
+          </p>
+
+          <p class="hero-copy">
+            <strong>
+              Made for scientists, engineers, mathematicians,
+              programmers, students, teachers and people who
+              never stopped asking why.
+            </strong>
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              class="button button-primary"
+              href="https://x.com/NerdWearUSA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Follow @NerdWearUSA
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="#alerts"
+            >
+              Join the Launch List
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div
+          class="formula-panel"
+          aria-label="Examples of formulas featured by NerdWear"
+        >
+
+          <div class="formula-circle"></div>
+
+          <div class="formula-stack">
+
+            <div class="formula-main">
+              1 / 137
+            </div>
+
+            <div class="formula-label">
+              The Fine-Structure Constant
+            </div>
+
+          </div>
+
+          <div class="formula-small formula-a">
+            E = mc²
+          </div>
+
+          <div class="formula-small formula-b">
+            e<sup>iπ</sup> + 1 = 0
+          </div>
+
+          <div class="formula-small formula-c">
+            0! = 1
+          </div>
+
+          <div class="formula-small formula-d">
+            i² = -1
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT CHARACTER -->
+
+    <section class="positioning">
+
+      <div class="container positioning-grid">
+
+        <div class="positioning-item">
+          <strong>Premium Embroidery</strong>
+          Texture, dimension and detail
+        </div>
+
+        <div class="positioning-item">
+          <strong>Multiple Hat Styles</strong>
+          More than one way to wear it
+        </div>
+
+        <div class="positioning-item">
+          <strong>Color Choices</strong>
+          Combinations with personality
+        </div>
+
+        <div class="positioning-item">
+          <strong>More Than Hats</strong>
+          Mugs, bottles and more
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT THE IDEA -->
+
+    <section class="about">
+
+      <div class="container about-grid">
+
+        <div>
+
+          <p class="eyebrow">
+            For people who get it
+          </p>
+
+          <h2>
+            Not everyone needs
+            to understand the reference.
+          </h2>
+
+        </div>
+
+
+        <div class="about-copy">
+
+          <p>
+            NerdWear started with a simple idea:
+            <strong>
+              some of the best things you can wear are understood
+              instantly by the right person and barely noticed by
+              everyone else.
+            </strong>
+          </p>
+
+          <p>
+            A number. An equation. A constant. A line of code.
+            A phrase that means something different when you know
+            the story behind it.
+          </p>
+
+          <p>
+            We're building a growing collection around mathematics,
+            physics, science, engineering, computing, systems,
+            strategy and curiosity.
+          </p>
+
+          <div class="tribes">
+
+            <span>Physics</span>
+            <span>Mathematics</span>
+            <span>Engineering</span>
+            <span>Computer Science</span>
+            <span>AI</span>
+            <span>Crypto</span>
+            <span>Strategy</span>
+            <span>General STEM</span>
+            <span>Curiosity</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- X FOLLOW -->
+
+    <section class="x-section">
+
+      <div class="container">
+
+        <div class="x-box">
+
+          <div>
+
+            <p class="eyebrow">
+              Follow the build
+            </p>
+
+            <h2>
+              NerdWear is already taking shape on X.
+            </h2>
+
+            <p>
+              Follow <strong>@NerdWearUSA</strong> for formula
+              stories, new design previews, color combinations,
+              polls, launch progress and a first look at what is
+              coming before the shop opens.
+            </p>
+
+          </div>
+
+
+          <a
+            class="button x-button"
+            href="https://x.com/NerdWearUSA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Follow @NerdWearUSA
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- EMAIL SIGNUP -->
+
+    <section
+      class="signup"
+      id="alerts"
+    >
+
+      <div class="container signup-grid">
+
+        <div class="signup-copy">
+
+          <p class="eyebrow">
+            Don't miss launch day
+          </p>
+
+          <h2>
+            Get NerdWear Alerts.
+          </h2>
+
+          <p>
+            Be the first to know when NerdWear launches.
+            Get new design drops, the stories behind the formulas,
+            and occasional surprises for people who think a little
+            differently.
+          </p>
+
+          <div class="privacy">
+            No spam. Just NerdWear news and new designs.
+            Unsubscribe anytime.
+          </div>
+
+        </div>
+
+
+        <div class="brevo-shell">
+
+          <!-- BREVO FORM -->
+
+          <div
+            class="sib-form"
+            style="text-align:center;background-color:transparent;"
+          >
+
+            <div
+              id="sib-form-container"
+              class="sib-form-container"
+            >
+
+              <!-- ERROR -->
+
+              <div
+                id="error-message"
+                class="sib-form-message-panel"
+                style="
+                  font-family:Helvetica,sans-serif;
+                  font-size:16px;
+                  text-align:left;
+                  color:#661d1d;
+                  background-color:#ffeded;
+                  border-color:#ff4949;
+                  border-radius:3px;
+                  max-width:540px;
+                "
+              >
+
+                <div
+                  class="sib-form-message-panel__text
+                         sib-form-message-panel__text--center"
+                >
+
+                  <span class="sib-form-message-panel__inner-text">
+                    Something went wrong and we couldn't save your
+                    signup. Please try again.
+                  </span>
+
+                </div>
+
+              </div>
+
+
+              <!-- SUCCESS -->
+
+              <div
+                id="success-message"
+                class="sib-form-message-panel"
+                style="
+                  font-family:Helvetica,sans-serif;
+                  font-size:16px;
+                  text-align:left;
+                  color:#085229;
+                  background-color:#e7faf0;
+                  border-color:#13ce66;
+                  border-radius:3px;
+                  max-width:540px;
+                "
+              >
+
+                <div
+                  class="sib-form-message-panel__text
+                         sib-form-message-panel__text--center"
+                >
+
+                  <span class="sib-form-message-panel__inner-text">
+                    Almost there. Check your email and confirm your
+                    subscription to join the NerdWear list.
+                  </span>
+
+                </div>
+
+              </div>
+
+
+              <div
+                id="sib-container"
+                class="sib-container--large sib-container--vertical"
+              >
+
+                <form
+                  id="sib-form"
+                  method="POST"
+                  action="https://82cc8d0b.sibforms.com/serve/MUIFABvmW9xt20z1gFGPbk9lrIcZKWq-uRjbK1WQpOCaqx1WXbKybpkroDLcuAirFYubycAyqBe27ybf1BcqFNkMyp06lMZoyciVy4UeBPeWHiCB4KfxSg3qm0neXLOSAeK0wP9R4R76HwRpEuo_342f719pc0RwgXrfCDB_ZdDnUOWZk8zCqNbgG71bpINP4nT2NUWjNEUcpB9Qbw=="
+                  data-type="subscription"
+                >
+
+                  <div style="padding:8px 0;">
+
+                    <div
+                      class="sib-form-block"
+                      style="
+                        font-family:Helvetica,sans-serif;
+                        font-size:28px;
+                        font-weight:700;
+                        text-align:left;
+                        color:#172232;
+                        background-color:transparent;
+                      "
+                    >
+                      <p>
+                        Get NerdWear Alerts
+                      </p>
+                    </div>
+
+                  </div>
+
+
+                  <div style="padding:8px 0;">
+
+                    <div
+                      class="sib-form-block"
+                      style="
+                        font-family:Helvetica,sans-serif;
+                        font-size:15px;
+                        text-align:left;
+                        color:#3c4858;
+                        background-color:transparent;
+                      "
+                    >
+
+                      <div class="sib-text-form-block">
+
+                        <p>
+                          Be the first to know when NerdWear launches.
+                        </p>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+                  <div style="padding:8px 0;">
+
+                    <div class="sib-input sib-form-block">
+
+                      <div class="form__entry entry_block">
+
+                        <div class="form__label-row">
+
+                          <label
+                            class="entry__label"
+                            style="
+                              font-weight:700;
+                              text-align:left;
+                              font-family:Helvetica,sans-serif;
+                              font-size:15px;
+                              color:#3c4858;
+                            "
+                            for="EMAIL"
+                            data-required="*"
+                          >
+                            Email address
+                          </label>
+
+                          <div class="entry__field">
+
+                            <input
+                              class="input"
+                              type="email"
+                              id="EMAIL"
+                              name="EMAIL"
+                              autocomplete="email"
+                              value=""
+                              placeholder="you@example.com"
+                              data-required="true"
+                              required
+                            >
+
+                          </div>
+
+                        </div>
+
+                        <label
+                          class="entry__error entry__error--primary"
+                          style="
+                            font-family:Helvetica,sans-serif;
+                            font-size:15px;
+                            text-align:left;
+                            color:#661d1d;
+                            background-color:#ffeded;
+                            border-color:#ff4949;
+                            border-radius:3px;
+                          "
+                        >
+                        </label>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+                  <!-- CAPTCHA -->
+
+                  <div style="padding:8px 0;">
+
+                    <div class="sib-captcha sib-form-block">
+
+                      <div class="form__entry entry_block">
+
+                        <div class="form__label-row">
+
+                          <script>
+                            function handleCaptchaResponse() {
+                              var event =
+                                new Event("captchaChange");
+
+                              document
+                                .getElementById("sib-captcha")
+                                .dispatchEvent(event);
+                            }
+                          </script>
+
+                          <div
+                            class="g-recaptcha sib-visible-recaptcha"
+                            id="sib-captcha"
+                            data-sitekey="6Lf2b7stAAAAADZvKAeH6UCVC_7zqAsuO4vnNYkv"
+                            data-callback="handleCaptchaResponse"
+                            style="direction:ltr"
+                          >
+                          </div>
+
+                        </div>
+
+                        <label
+                          class="entry__error entry__error--primary"
+                          style="
+                            font-family:Helvetica,sans-serif;
+                            font-size:15px;
+                            text-align:left;
+                            color:#661d1d;
+                            background-color:#ffeded;
+                            border-color:#ff4949;
+                            border-radius:3px;
+                          "
+                        >
+                        </label>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+                  <!-- BUTTON -->
+
+                  <div style="padding:8px 0;">
+
+                    <div
+                      class="sib-form-block"
+                      style="text-align:left"
+                    >
+
+                      <button
+                        class="sib-form-block__button
+                               sib-form-block__button-with-loader"
+                        form="sib-form"
+                        type="submit"
+                      >
+                        Keep Me Posted!
+                      </button>
+
+                    </div>
+
+                  </div>
+
+
+                  <input
+                    type="text"
+                    name="email_address_check"
+                    value=""
+                    class="input--hidden"
+                  >
+
+                  <input
+                    type="hidden"
+                    name="locale"
+                    value="en"
+                  >
+
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div>
+        &copy; 2026 NerdWear.net
+      </div>
+
+      <div class="footer-links">
+
+        <a
+          href="https://x.com/NerdWearUSA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @NerdWearUSA
+        </a>
+
+        <a href="#alerts">
+          NerdWear Alerts
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- BREVO -->
+
+  <script>
+    window.REQUIRED_CODE_ERROR_MESSAGE =
+      "Please choose a country code";
+
+    window.LOCALE = "en";
+
+    window.EMAIL_INVALID_MESSAGE =
+      window.SMS_INVALID_MESSAGE =
+      "That email address doesn't look quite right. Please check it and try again.";
+
+    window.REQUIRED_ERROR_MESSAGE =
+      "Please enter your email address.";
+
+    window.GENERIC_INVALID_MESSAGE =
+      "That email address doesn't look quite right. Please check it and try again.";
+
+    window.INVALID_NUMBER =
+      "That email address doesn't look quite right. Please check it and try again.";
+
+    window.INVALID_DATE =
+      "Please enter a valid date";
+
+    window.REQUIRED_MULTISELECT_MESSAGE =
+      "Please select at least 1 option";
+
+    window.translation = {
+      common: {
+        selectedList: "{quantity} list selected",
+        selectedLists: "{quantity} lists selected",
+        selectedOption: "{quantity} selected",
+        selectedOptions: "{quantity} selected"
+      }
+    };
+
+    var AUTOHIDE = Boolean(1);
+  </script>
+
+  <script
+    defer
+    src="https://sibforms.com/forms/end-form/build/main.js">
+  </script>
+
+  <script
+    async
+    defer
+    src="https://www.google.com/recaptcha/api.js?hl=en">
+  </script>
+
+</body>
+</html>
