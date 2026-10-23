@@ -1,0 +1,21 @@
+NERDWEAR EXPRESSION EDITORIAL RESEARCH NOTES
+
+These pages are written as general-reader educational material. Historical and technical claims were deliberately kept conservative. Key reference families used while drafting include:
+
+- NIST / CODATA fundamental constants: current 2022 recommended values, including h and the fine-structure constant.
+  https://physics.nist.gov/constants
+- Caltech / The Feynman Lectures and Caltech archives for Feynman on experiment, doubt, uncertainty, and scientific integrity.
+  https://www.feynmanlectures.caltech.edu/
+  https://calteches.library.caltech.edu/
+- Wolfram MathWorld for standard mathematical definitions (Euler formula/identity, logarithms, imaginary unit, zero factorial).
+  https://mathworld.wolfram.com/
+- Standard historical treatment of Planck/Einstein, Pythagorean theorem, logarithms, and golden-ratio mathematics.
+
+Editorial cautions intentionally reflected in the copy:
+- “Question Everything” is NOT presented as a verbatim Richard Feynman quotation.
+- The Pythagorean relationship is acknowledged as predating the traditional attribution to Pythagoras.
+- Popular claims that the golden ratio universally determines beauty or ancient design are treated skeptically.
+- E = mc² is explained as the rest-energy relation, with a note that relativistic energy is more general.
+- E = hf is the product notation; the equivalent E = hν notation is explained with Planck/Einstein historical nuance.
+- Fine-structure constant value is identified as the 2022 CODATA recommendation rather than a timeless decimal.
+- “Fix the Money. Fix the World.” is presented as a systems thesis, not a factual theorem or financial recommendation.
