@@ -6,14 +6,14 @@
   <meta name="color-scheme" content="dark">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="theme-color" content="#0c0d0f">
-  <title>Contact NerdWear | Questions, Corrections &amp; Ideas</title>
-  <meta name="description" content="Got a question, correction, idea or technical objection? Good. Reach NerdWear through @NerdWearUSA on X to talk math, physics, engineering, coding, science, product ideas and the references behind the Expressions. We would rather get it right than merely sound right.">
+  <title>Contact NerdWear | Customer Support, Questions &amp; Ideas</title>
+  <meta name="description" content="Contact NerdWear about an order, shipping, products, technical corrections or ideas using our secure, text-only contact form.">
   <link rel="canonical" href="https://nerdwear.net/contact.html">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="NerdWear">
   <meta property="og:title" content="Contact NerdWear">
-  <meta property="og:description" content="Got a question, correction, idea or technical objection? Good. Reach NerdWear through @NerdWearUSA on X to talk math, physics, engineering, coding, science, product ideas and the references behind the Expressions. We would rather get it right than merely sound right.">
+  <meta property="og:description" content="Contact NerdWear about an order, shipping, products, technical corrections or ideas using our secure, text-only contact form.">
   <meta property="og:url" content="https://nerdwear.net/contact.html">
   <meta property="og:image" content="https://nerdwear.net/images/social/social-1.webp">
   <meta property="og:image:secure_url" content="https://nerdwear.net/images/social/social-1.webp">
@@ -25,7 +25,7 @@
   <meta name="twitter:site" content="@NerdWearUSA">
   <meta name="twitter:creator" content="@NerdWearUSA">
   <meta name="twitter:title" content="Contact NerdWear">
-  <meta name="twitter:description" content="Got a question, correction, idea or technical objection? Good. Reach NerdWear through @NerdWearUSA on X to talk math, physics, engineering, coding, science, product ideas and the references behind the Expressions. We would rather get it right than merely sound right.">
+  <meta name="twitter:description" content="Contact NerdWear about an order, shipping, products, technical corrections or ideas using our secure, text-only contact form.">
   <meta name="twitter:image" content="https://nerdwear.net/images/social/social-1.webp">
   <meta name="twitter:image:alt" content="NerdWear — Wear What You Know">
   <meta name="twitter:url" content="https://nerdwear.net/contact.html">
@@ -34,6 +34,34 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
   <link rel="stylesheet" href="site.css">
+  <style>
+    .nw-contact-wrap { max-width: 800px; margin-inline: auto; }
+    .nw-contact-form { display: grid; gap: 1.15rem; margin-top: 1.3rem; }
+    .nw-contact-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .nw-contact-field { display: grid; gap: .4rem; min-width: 0; }
+    .nw-contact-field label { color: #f2f2f2; font-weight: 650; }
+    .nw-contact-field input, .nw-contact-field select, .nw-contact-field textarea {
+      box-sizing: border-box; width: 100%; max-width: 100%; font: inherit;
+      background: #13171d; color: #f5f5f5; border: 1px solid #59616a;
+      border-radius: 9px; padding: .85rem .9rem; line-height: 1.4;
+    }
+    .nw-contact-field textarea { min-height: 180px; resize: vertical; }
+    .nw-contact-field input:focus-visible, .nw-contact-field select:focus-visible,
+    .nw-contact-field textarea:focus-visible { outline: 2px solid #d6ad64; outline-offset: 2px; }
+    .nw-contact-hint { font-size: .875rem; color: #b8c0c9; margin: 0; }
+    .nw-contact-required { color: #f0cc87; }
+    .nw-contact-status { min-height: 1.4em; font-weight: 600; }
+    .nw-contact-status[data-state="error"] { color: #ffaaa3; }
+    .nw-contact-status[data-state="success"] { color: #b6ecc8; }
+    .nw-contact-actions { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+    .nw-contact-actions button[disabled] { opacity: .6; cursor: wait; }
+    .nw-contact-other { margin-top: 2rem; padding-top: 1.4rem; border-top: 1px solid #454b52; }
+    .nw-contact-hp { position: absolute !important; left: -10000px !important; top: auto !important;
+      width: 1px !important; height: 1px !important; overflow: hidden !important; }
+    @media (max-width: 620px) { .nw-contact-row { grid-template-columns: minmax(0, 1fr); } }
+  </style>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
 
   <script type="application/ld+json">
   {
@@ -62,7 +90,7 @@
         "@id": "https://nerdwear.net/contact.html#webpage",
         "url": "https://nerdwear.net/contact.html",
         "name": "Contact NerdWear",
-        "description": "Contact NerdWear through @NerdWearUSA on X for questions, technical corrections and conversations about math, physics, engineering, coding and science Expressions.",
+        "description": "Contact NerdWear using our secure, text-only contact form for order questions, product questions, technical corrections and ideas.",
         "isPartOf": {
           "@id": "https://nerdwear.net/#website"
         },
@@ -84,7 +112,122 @@
       <nav class="mobile-panel" aria-label="Mobile navigation"><a href="expressions.html">Expressions</a><a href="hat-styles-colors.html">Hat Styles & Colors</a><a href="wear-what-you-know.html">Wear What You Know</a><a href="our-story.html">Our Story</a><a href="whats-next.html">What's Next</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a class="btn btn-primary" href="https://shop.nerdwear.net/">SHOP</a></nav>
     </details>
   </div>
-</header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow">Contact</div><h1>Find us where the <em>conversation is.</em></h1><p class="lead">For now, the best way to reach NerdWear is through our X account. We are deliberately not publishing an email address or running a general-purpose contact form on NerdWear.net at launch.</p></div></section><section class="section"><div class="container"><div class="contact-card"><div class="eyebrow">@NerdWearUSA</div><h2>Questions, corrections, ideas, or a reference we should know?</h2><p class="muted">Reach out or mention us on X. We especially appreciate thoughtful corrections on technical or historical material. The whole point of the brand is that the ideas behind the Expressions should hold up.</p><div class="hero-actions"><a class="btn btn-primary" href="https://x.com/NerdWearUSA">Open @NerdWearUSA</a><a class="btn btn-secondary" href="expressions.html">Browse Expressions</a></div></div><p class="microcopy">A dedicated contact form can be added later if we choose a form-processing service appropriate for a static GitHub Pages site.</p></div></section></main><footer class="site-footer">
+</header><main id="main">
+  <section class="page-hero"><div class="container">
+    <div class="eyebrow">Contact</div>
+    <h1>Something on your <em>mind?</em></h1>
+    <p class="lead">Questions about an order, a product, or the ideas behind NerdWear? Send us a message directly.</p>
+  </div></section>
+  <section class="section"><div class="container"><div class="nw-contact-wrap">
+    <div class="contact-card">
+      <div class="eyebrow">NerdWear Contact</div>
+      <h2>Send a message</h2>
+      <p class="muted">Messages are reviewed personally. For an existing order, include your order number if you have it. Please describe any product issue in words; this form does not accept attachments.</p>
+      <form id="nw-contact-form" class="nw-contact-form" novalidate>
+        <div class="nw-contact-row">
+          <div class="nw-contact-field"><label for="nw-name">Name <span class="nw-contact-required">*</span></label>
+            <input id="nw-name" name="name" autocomplete="name" maxlength="100" required></div>
+          <div class="nw-contact-field"><label for="nw-email">Email address <span class="nw-contact-required">*</span></label>
+            <input id="nw-email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+        </div>
+        <div class="nw-contact-row">
+          <div class="nw-contact-field"><label for="nw-topic">Subject <span class="nw-contact-required">*</span></label>
+            <select id="nw-topic" name="topic" required>
+              <option value="">Select a subject</option>
+              <option value="Order question">Order question</option>
+              <option value="Product question">Product question</option>
+              <option value="Shipping question">Shipping question</option>
+              <option value="Other question">Other question</option>
+            </select></div>
+          <div class="nw-contact-field"><label for="nw-order">Order number (optional)</label>
+            <input id="nw-order" name="order" maxlength="60" autocomplete="off" placeholder="If applicable"></div>
+        </div>
+        <div class="nw-contact-field"><label for="nw-message">Your message <span class="nw-contact-required">*</span></label>
+          <textarea id="nw-message" name="message" maxlength="3000" minlength="15" required placeholder="Tell us how we can help."></textarea>
+          <p class="nw-contact-hint">15–3,000 characters. Text only. Please don't include links, passwords, or payment information.</p></div>
+        <div class="nw-contact-hp" aria-hidden="true"><label for="nw-company-url">Company website</label>
+          <input id="nw-company-url" name="company_url" tabindex="-1" autocomplete="off"></div>
+        <!-- Replace the public site-key placeholder with the NerdWear Contact Turnstile SITE KEY. Never use the secret key here. -->
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAAFtPigMKp1NxU0VY" data-theme="dark"></div>
+        <div class="nw-contact-actions">
+          <button id="nw-contact-send" class="btn btn-primary" type="submit">Send message</button>
+          <p id="nw-contact-status" class="nw-contact-status" role="status" aria-live="polite"></p>
+        </div>
+        <p class="nw-contact-hint">This form is for direct inquiries only. Submitting it does not subscribe you to marketing emails. No files can be uploaded.</p>
+      </form>
+      <div class="nw-contact-other">
+        <p class="muted">Prefer X? You can also find us at <a href="https://x.com/NerdWearUSA">@NerdWearUSA</a>.</p>
+      </div>
+    </div>
+  </div></div></section>
+</main>
+<script>
+(function () {
+  'use strict';
+  const endpoint = 'https://nerdwear-contact.johnny-q.workers.dev/';
+  const form = document.getElementById('nw-contact-form');
+  const button = document.getElementById('nw-contact-send');
+  const status = document.getElementById('nw-contact-status');
+  let started = Date.now();
+  let sending = false;
+  function show(message, state) {
+    status.textContent = message;
+    status.dataset.state = state || '';
+  }
+  function resetChallenge() {
+    if (window.turnstile && typeof window.turnstile.reset === 'function') {
+      window.turnstile.reset();
+    }
+  }
+  form.addEventListener('submit', async function (event) {
+    event.preventDefault();
+    if (sending) return;
+    if (!form.reportValidity()) return;
+    const token = form.querySelector('[name="cf-turnstile-response"]')?.value || '';
+    if (!token) {
+      show('Please complete the security check before sending.', 'error');
+      return;
+    }
+    const data = {
+      name: form.elements.name.value,
+      email: form.elements.email.value,
+      topic: form.elements.topic.value,
+      order: form.elements.order.value,
+      message: form.elements.message.value,
+      company_url: form.elements.company_url.value,
+      elapsedMs: Date.now() - started,
+      'cf-turnstile-response': token
+    };
+    sending = true;
+    button.disabled = true;
+    show('Sending your message…', '');
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        mode: 'cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const result = await response.json();
+      if (!response.ok || !result.ok) {
+        show(result.error || 'The message could not be sent. Please try again.', 'error');
+        resetChallenge();
+        return;
+      }
+      form.reset();
+      resetChallenge();
+      started = Date.now();
+      show('Your message has been sent. Thank you for contacting NerdWear.', 'success');
+    } catch (error) {
+      show('Unable to send right now. Please try again later.', 'error');
+      resetChallenge();
+    } finally {
+      sending = false;
+      button.disabled = false;
+    }
+  });
+})();
+</script><footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand"><strong>NerdWear.</strong><p>Wear what you know.</p><p>Intelligent headwear built around ideas worth recognizing.</p></div>
