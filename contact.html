@@ -56,8 +56,6 @@
     .nw-contact-actions { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
     .nw-contact-actions button[disabled] { opacity: .6; cursor: wait; }
     .nw-contact-other { margin-top: 2rem; padding-top: 1.4rem; border-top: 1px solid #454b52; }
-    .nw-contact-hp { position: absolute !important; left: -10000px !important; top: auto !important;
-      width: 1px !important; height: 1px !important; overflow: hidden !important; }
     @media (max-width: 620px) { .nw-contact-row { grid-template-columns: minmax(0, 1fr); } }
   </style>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
@@ -145,9 +143,6 @@
         <div class="nw-contact-field"><label for="nw-message">Your message <span class="nw-contact-required">*</span></label>
           <textarea id="nw-message" name="message" maxlength="3000" minlength="15" required placeholder="Tell us how we can help."></textarea>
           <p class="nw-contact-hint">15–3,000 characters. Text only. Please don't include links, passwords, or payment information.</p></div>
-<div class="nw-contact-hp" aria-hidden="true"><label for="nw-company-url">Company website</label>
-  <input id="nw-company-url" name="company_url" tabindex="-1" autocomplete="off"></div>
-        <!-- Replace the public site-key placeholder with the NerdWear Contact Turnstile SITE KEY. Never use the secret key here. -->
         <div class="cf-turnstile" data-sitekey="0x4AAAAAAFtPigMKp1NxU0VY" data-theme="dark"></div>
         <div class="nw-contact-actions">
           <button id="nw-contact-send" class="btn btn-primary" type="submit">Send message</button>
@@ -156,7 +151,11 @@
         <p class="nw-contact-hint">This form is for direct inquiries only. Submitting it does not subscribe you to marketing emails. No files can be uploaded.</p>
       </form>
       <div class="nw-contact-other">
-        <p class="muted">Prefer X? You can also find us at <a href="https://x.com/NerdWearUSA">@NerdWearUSA</a>.</p>
+        <div class="eyebrow">Join the conversation</div>
+        <h2>Find us where the conversation is.</h2>
+        <p class="muted">Questions, corrections, ideas, or a reference we should know? Follow <a href="https://x.com/NerdWearUSA">@NerdWearUSA on X</a> for the math, physics, engineering, coding, and science behind our Expressions. We welcome thoughtful corrections and a good technical debate. We'd rather get it right than merely sound right.</p>
+        <div class="hero-actions"><a class="btn btn-secondary" href="https://x.com/NerdWearUSA">Join us on X</a><a class="btn btn-secondary" href="expressions.html">Browse Expressions</a></div>
+        <p class="nw-contact-hint">For order questions or private inquiries, use the contact form above. An X account is never required to reach NerdWear.</p>
       </div>
     </div>
   </div></div></section>
@@ -194,7 +193,6 @@
       topic: form.elements.topic.value,
       order: form.elements.order.value,
       message: form.elements.message.value,
-      company_url: form.elements.company_url.value,
       elapsedMs: Date.now() - started,
       'cf-turnstile-response': token
     };
